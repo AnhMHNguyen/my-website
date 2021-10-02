@@ -23,7 +23,7 @@ export const ContactContainer = styled.div`
     }
     input, textarea {
       width: 100%;
-      padding: 5px;
+      padding: 10px;
       background-color: var(--color-blue);
       border: none;
       border-bottom: 2px solid black;

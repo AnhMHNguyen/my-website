@@ -54,7 +54,7 @@ export const DescContainer = styled.div`
   align-items: center;
   gap: 20px;
   font-size: 15px;
-  & span:last-child {
+  & .buttons {
     display: flex;
     gap: 50px;
   }
@@ -87,22 +87,23 @@ export const CardInner = styled.div`
 
 
 export const DetailsContainer = styled.div`
-  position: absolute;
-  backface-visibility: hidden;
-  width: 100%;
-  height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: rotateX(-180deg);
-  background-color: var(--color-blue);
+  flex-direction: column;
 `;
 
 export const ImageContainer = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
+  transform: translate(-2%, -2%);
+  box-shadow: 10px 15px 25px 0 rgba(0,0,0,.3);
+  display: block;
+  transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin-top: -10px;
+  &:hover {
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+    transform: translate(0%, 0%);
+  }
 `;
 
 

@@ -1,16 +1,21 @@
 import React from 'react'
-import Aos from 'aos'
+import { saveAs } from 'file-saver'
+import resume from '../../assets/my_resume.pdf'
 import CustomButton from '../custom-button/custom-button.component'
 import { AboutContainer, TitleContainer } from './about.styles'
 
 const About = React.forwardRef((props, ref) => {
+  const saveFile = () => {
+    saveAs(resume, "AnneNguyen_Resume.pdf")
+  }
+
   return (
     <AboutContainer ref={ref}>
       <TitleContainer>About Me</TitleContainer>
       <span data-aos="zoom-in">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      I'm a graduate with an Advanced Diploma in Computer Programming and Analysis. My interests are in Web Developer and I love to create beautiful and performant products with delightful user experiences. I'm also a data lover and currently learning Machine Learning.
       </span>
-      <CustomButton primary>My Resume</CustomButton>
+      <CustomButton primary onClick={saveFile}>My Resume</CustomButton>
     </AboutContainer>
   )
 })

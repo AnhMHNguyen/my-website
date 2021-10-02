@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 const buttonStyles = css`
-  font-size: 20px;
+  font-size: 17px;
   padding: 10px 50px;
 
   &:after {
@@ -11,7 +11,7 @@ const buttonStyles = css`
 `;
 
 const smallButtonStyles = css`
-  font-size: 15px;
+  font-size: 12px;
   padding: 7px 30px;
 
   &:after {

@@ -40,16 +40,18 @@ const Skills = React.forwardRef((props, ref) => {
           <CardInner>
             <IconContainer>
               <TitleContainer>Machine Learning</TitleContainer>
-              <span>
-                <p>NumPy</p>
-                <p>Pandas</p>
-                <p>Matplotlib</p>
-                <p>Scikit-learn</p>
-              </span>
-              <span>
-                <FaPython size={35}/>
-                <SiRstudio size={35}/>
-              </span>
+              <div>
+                <span>
+                  <p>NumPy</p>
+                  <p>Pandas</p>
+                  <p>Matplotlib</p>
+                  <p>Scikit-learn</p>
+                </span>
+                <span>
+                  <FaPython size={35}/>
+                  <SiRstudio size={35}/>
+                </span>
+              </div>
             </IconContainer>
             <ToolsContainer>
               <TitleContainer>Tools</TitleContainer>

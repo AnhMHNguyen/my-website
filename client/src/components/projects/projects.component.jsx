@@ -16,22 +16,20 @@ const Projects = React.forwardRef((props, ref) => {
             featured shopping cart, product reviews and ratings, user profile with orders,
             admin product, user and order management, checkout process and Paypal.
           </span>
-          <span>
-            <a href="https://jimmie-shop.herokuapp.com/"><CustomButton primary small  onClick="loca">Live Demo</CustomButton></a>
+          <DetailsContainer>
+              <span><strong>Front End:</strong> React Hooks and Redux Saga</span>
+              <span><strong>Back End:&nbsp;</strong> Django</span>
+              <span><strong>Styling:&nbsp;&emsp;</strong> Styled Components</span>
+          </DetailsContainer>
+          <span className="buttons">
+            <a href="https://jimmie-shop.herokuapp.com/"><CustomButton primary small>Live Demo</CustomButton></a>
             <a href="https://github.com/AnhMHNguyen/jimmie-shop"><CustomButton small>View Code</CustomButton></a>
           </span>
         </DescContainer>
         <CardContainer>
-          <CardInner>
             <ImageContainer>
               <Image src={project1} alt="project-1" />
             </ImageContainer>
-            <DetailsContainer>
-              <span><strong>Front End:</strong> React Hooks and Redux Saga</span>
-              <span><strong>Back End:</strong> Django</span>
-              <span><strong>Styling:</strong> Styled Components</span>
-            </DetailsContainer>
-          </CardInner>
         </CardContainer>
       </ProjectContainer>
       <ProjectContainer>
@@ -43,22 +41,20 @@ const Projects = React.forwardRef((props, ref) => {
             Google Maps API geocoding to create a map and information chart showing the 
             average rent in Vancouver and each area is clustered according to venue density.
           </span>
-          <span>
+          <DetailsContainer>
+              <span><strong>Language:&nbsp;</strong> Python</span>
+              <span><strong>Algorithm:</strong> K-Means</span>
+              <span><strong>Tools:&emsp;&emsp;</strong> Jupyter Notebook</span>
+          </DetailsContainer>
+          <span className="buttons">
             <a href="https://github.com/AnhMHNguyen/DataScienceCapstone/blob/main/Capstone_Report.pdf"><CustomButton primary small>View Report</CustomButton></a>
             <a href="https://github.com/AnhMHNguyen/DataScienceCapstone/blob/main/Neighborhoods-in-Toronto.ipynb"><CustomButton small>View Code</CustomButton></a>
           </span>
         </DescContainer>
         <CardContainer>
-          <CardInner>
-            <ImageContainer>
-              <Image src={project2} alt="project-2" />
-            </ImageContainer>
-            <DetailsContainer>
-              <span><strong>Language:</strong> Python</span>
-              <span><strong>Tools:</strong> Jupyter Notebook</span>
-              <span><strong>Algorithm:</strong> K-Means</span>
-            </DetailsContainer>
-          </CardInner>
+          <ImageContainer>
+            <Image src={project2} alt="project-2" />
+          </ImageContainer>
         </CardContainer>
       </ProjectContainer>
     </ProjectsContainer>
