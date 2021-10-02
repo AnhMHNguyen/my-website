@@ -43,10 +43,9 @@ const Sidebar = ({ scroll, pos }) => {
      </SidebarBody>
      <Divider />
      <SocialMedia>
-        <a href="#"><i className="fab fa-youtube fa-lg"></i></a>
         <a href="https://github.com/AnhMHNguyen"><i className="fab fa-github fa-lg"></i></a>
-        <a href="#"><i className="fab fa-linkedin fa-lg"></i></a>
-        <a href="#"><i className="fab fa-kaggle fa-lg"></i></a>
+        <a href="https://www.linkedin.com/in/anh-nguyen-b585b9222/"><i className="fab fa-linkedin fa-lg"></i></a>
+        <a href="https://www.kaggle.com/anhng241"><i className="fab fa-kaggle fa-lg"></i></a>
      </SocialMedia>
      
    </SidebarContainer>

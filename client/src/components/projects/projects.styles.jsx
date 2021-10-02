@@ -73,19 +73,6 @@ export const CardContainer = styled.div`
   }
 `;
 
-export const CardInner = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
-  ${CardContainer}:hover & {
-    transform: rotateX(-180deg);
-  }
-`;
-
-
 export const DetailsContainer = styled.div`
   display: flex;
   flex-direction: column;

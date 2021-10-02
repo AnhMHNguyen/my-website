@@ -2,7 +2,7 @@ import React from 'react'
 import CustomButton from '../custom-button/custom-button.component'
 import project1 from '../../assets/image1.JPG'
 import project2 from '../../assets/image2.JPG'
-import { ProjectsContainer, ProjectContainer, Image, DescContainer, HeaderContainer, TitleContainer, CardContainer, CardInner, ImageContainer, DetailsContainer} from './projects.styles'
+import { ProjectsContainer, ProjectContainer, Image, DescContainer, HeaderContainer, TitleContainer, CardContainer, ImageContainer, DetailsContainer} from './projects.styles'
 
 const Projects = React.forwardRef((props, ref) => {
   return (

@@ -28,7 +28,7 @@ const Skills = React.forwardRef((props, ref) => {
                 <span>
                   <SiVisualstudiocode size={35}/>
                   <SiAtom size={35} />
-                  <img src="https://img.icons8.com/windows/50/000000/pycharm.png"/>
+                  <img src="https://img.icons8.com/windows/50/000000/pycharm.png" alt="PyCharm"/>
                   <FaAws size={35}/>
                   <SiFirebase size={35} />
                 </span>
