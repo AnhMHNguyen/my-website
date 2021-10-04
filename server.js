@@ -1,5 +1,5 @@
 const express = require('express');
-const router = express.Router();
+// const router = express.Router();
 const cors = require('cors');
 const path = require('path');
 const nodemailer = require('nodemailer');
@@ -7,23 +7,23 @@ const nodemailer = require('nodemailer');
 if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 5000;
+// const port = process.env.PORT || 5000;
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(cors());
-app.use("/", router);
+// app.use("/", router);
+app.use(express.static(path.join(__dirname, 'client/build')));
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, 'client/build')));
+// if (process.env.NODE_ENV === 'production') {
 
-  app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-  });
-}; 
+//   app.get('*', function(req, res) {
+//     res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+//   });
+// }; 
 
-app.listen(port, error => {
+app.listen(5000, error => {
   if (error) throw error;
-  console.log('Server running on port ' + port);
+  console.log('Server running on port ' + 5000);
 });
 
 const contactEmail = nodemailer.createTransport({
@@ -42,7 +42,7 @@ contactEmail.verify((error) => {
   }
 });
 
-router.post("/contact", (req, res) => {
+app.post("/contact", (req, res) => {
   const name = req.body.name;
   const email = req.body.email;
   const subject = req.body.subject;
