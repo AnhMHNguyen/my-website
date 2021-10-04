@@ -1,11 +1,7 @@
-import React, { useEffect } from 'react'
-import Aos from 'aos'
+import React from 'react'
 import { IntroductionContainer, TextContainer, ImageContainer, Image } from './introduction.styles'
 
 const Introduction = React.forwardRef((props, ref) => {
-  useEffect(() => {
-    Aos.init({ duration: 2000 })
-  },[])
 
   return (
     <IntroductionContainer ref={ref}>

@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect} from 'react'
+import Aos from 'aos'
 import Sidebar from '../../components/sidebar/sidebar.component'
 import Introduction from '../../components/introduction/introduction.component'
 import About from '../../components/about/about.component';
@@ -19,6 +20,7 @@ const HomePage = () => {
   const [ toggle, setToggle ] = useState(false)
 
   useEffect(() => {
+    Aos.init({ duration: 2000 })
     window.addEventListener("scroll", scrollListener)
     return () => window.removeEventListener("scroll", scrollListener)
   },[])
