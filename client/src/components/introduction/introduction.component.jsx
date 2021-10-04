@@ -5,8 +5,8 @@ const Introduction = React.forwardRef((props, ref) => {
 
   return (
     <IntroductionContainer ref={ref}>
-      <TextContainer >Hi, my name is <span>Anne Nguyen</span> <br/> I'm a Web Developer</TextContainer>
-      <ImageContainer><Image /></ImageContainer>
+      <TextContainer data-aos="fade-right">Hi, my name is <span>Anne Nguyen</span> <br/> I'm a Web Developer</TextContainer>
+      <ImageContainer data-aos="fade-left"><Image /></ImageContainer>
     </IntroductionContainer>
   )
 })

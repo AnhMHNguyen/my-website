@@ -8,7 +8,7 @@ const Projects = React.forwardRef((props, ref) => {
   return (
     <ProjectsContainer ref={ref}>
       <HeaderContainer>Projects</HeaderContainer>
-      <ProjectContainer >
+      <ProjectContainer data-aos="fade-down-right">
         <DescContainer>
           <TitleContainer>Jimmie Pet Shop</TitleContainer>
           <span>
@@ -32,7 +32,7 @@ const Projects = React.forwardRef((props, ref) => {
             </ImageContainer>
         </CardContainer>
       </ProjectContainer>
-      <ProjectContainer>
+      <ProjectContainer data-aos="fade-down-left">
         <DescContainer>
           <TitleContainer>Rent and Venues Data Analysis of Vancouver</TitleContainer>
           <span>

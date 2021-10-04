@@ -8,7 +8,7 @@ const Skills = React.forwardRef((props, ref) => {
     <SkillsContainer ref={ref}>
       <HeaderContainer>My Skills</HeaderContainer>
       <ContentContainer>
-        <CardContainer>
+        <CardContainer data-aos="flip-down">
           <CardInner>
             <IconContainer>
               <TitleContainer>Web Development</TitleContainer>
@@ -36,7 +36,7 @@ const Skills = React.forwardRef((props, ref) => {
           </CardInner>
         </CardContainer>
 
-        <CardContainer>
+        <CardContainer data-aos="flip-down">
           <CardInner>
             <IconContainer>
               <TitleContainer>Machine Learning</TitleContainer>
